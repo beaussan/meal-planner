@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { addDays, format, getDayOfYear } from 'date-fns';
 import { fr } from 'date-fns/locale';
+import './styles/tailwind.css';
 
 const feculants = [
   'riz',
