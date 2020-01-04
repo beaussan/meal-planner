@@ -2,14 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { addDays, format, getDayOfYear } from 'date-fns';
 import { fr } from 'date-fns/locale';
-import './styles/tailwind.css';
+import './tailwind.css';
 
 const feculants = [
   'riz',
   'pates',
   'pomme de terre',
-  'haricots blancs / rouges',
-  'Pois chiches'
+  'haricots blancs / rouges'
 ];
 const legumes = [
   'epinards',
@@ -23,7 +22,6 @@ const legumes = [
 ];
 const viandes = ['oeuf', 'cordon bleu', 'poisson', 'tofu', 'steaks'];
 const nmbDay = 10;
-
 function getDays() {
   return Array.from(Array(nmbDay).keys()).map(val => addDays(new Date(), val));
 }
